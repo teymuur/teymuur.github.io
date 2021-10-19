@@ -8,7 +8,32 @@ body {
 	background-attachment: fixed;
 	
   }
-  
+    .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0 !important;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
   .topnav {
 	overflow: hidden;
 	background-color: #333;
@@ -122,32 +147,7 @@ body {
 	}
 	
   }
-  .image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
-/* The overlay effect - lays on top of the container and over the image */
-.overlay !important{
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0 !important;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
-  opacity: 1;
-}
   @media screen and (max-width: 600px) {
 	.topnav.responsive
 	 {
