@@ -129,7 +129,7 @@ body {
 }
 
 /* The overlay effect - lays on top of the container and over the image */
-.overlay {
+.overlay !important{
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
