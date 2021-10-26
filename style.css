@@ -93,6 +93,9 @@ img{
 	#second{
 		height:800px;
 	}
+	.contact{
+	width
+	}
 }
 #contact{
 	height:800px;
@@ -102,7 +105,7 @@ img{
 .contact{
 	font-size: 26px;
 	height:400px;
-	width: 800px;
+	width: 360px;
 	border-radius: 10%;
 	background-color:rgb(31, 30, 30);
 	margin:60px;
