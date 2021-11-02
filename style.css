@@ -81,23 +81,8 @@ img{
 	margin-left:500px;
 
 }
-@media only screen and (max-width:600px) {
-	#welcome h1{
-		margin: 100px;
-		font-size: 26px;
-	}
-	#welcome{
-		height:800px;
-	}
-	#second{
-		height:800px;
-	}
-	.contact{
-	width
-	}
-}
 #contact{
-	height:600px;
+	height:600px ;
 	background: url(images/Programming.jpg);
 	background-size: contain;
 }
@@ -108,4 +93,25 @@ img{
 	border-radius: 10%;
 	background-color:rgb(31, 30, 30);
 	margin:60px;
+}
+
+@media only screen and (max-width:600px) {
+	#welcome h1{
+		margin: 100px;
+		font-size: 26px;
+	}
+	#welcome{
+		height:800px;
+	}
+	#second{
+		height:1200px;
+	}
+	.container{
+	width:300px;
+	
+	}
+	.contact{
+		width: 300px;
+	}
+	
 }
