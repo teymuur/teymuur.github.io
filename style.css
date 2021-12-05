@@ -101,10 +101,10 @@ img{
 		font-size: 26px;
 	}
 	#welcome{
-		height:800px;
+		height:600px;
 	}
 	#second{
-		height:1600px;
+		height:2000px;
 	}
 	.container{
 	width:300px;
@@ -115,8 +115,7 @@ img{
 	}
 	    .container {
   width: 200px;
- 
-  border-radius:6px;
+
 }
 
 .skills {
