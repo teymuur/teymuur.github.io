@@ -114,18 +114,14 @@ img{
 		width: 300px;
 	}
 	    .container {
-  width: 300px;
-  background-color: #ddd;
+  width: 200px;
+ 
   border-radius:6px;
 }
 
 .skills {
-  font-size:12px;
-  width: 300px;
-  border-radius:6px;
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
+  font-size:10px;
+  width: 200px;
+ 
 }
 }
