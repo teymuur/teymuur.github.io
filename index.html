@@ -1,115 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .container {
-  width: 800px;
-  background-color: #ddd;
-  border-radius:6px;
-}
-
-.skills {
-  font-size:12px;
-  width: 800px;
-  border-radius:6px;
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-.html {width: 90%; background-color: #04AA6D;}
-.css {width: 60%; background-color: #2196F3;}
-.js {width: 85%; background-color: #f44336;}
-.php {width: 80%; background-color: #808080;}
-.sql {width: 70%; background-color: #999900;}
-.python {width: 90%; background-color: #0000b3;}
-.c {width: 60%; background-color: #4c42b3;}
-.cpp{width: 65%;  background-image: linear-gradient(to right,white, black);}
-.asembly{ width: 30%;  background-image: linear-gradient(to right,red, #8F8F00);}
-
-  </style>
-  <title>Teymur</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teymur Babayev - Coder Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#welcome" class="skip-nav" >SKIP NAVIGATION</a>
-  <nav>
-    &nbsp;Teymur&nbsp;
-    <button onclick="window.location = 'index.html#welcome'">Home </button>
-    <button onclick= "window.location = 'index.html#second'">Projects</button>
-    <button onclick= "window.location = 'index.html#contact'">Contact</button>
-  </nav>
-  <div id="welcome">
-  <h1>Welcome to my portfolio</h1>
-  </div>
-  <div id="second">
-  <br></br><h1>Projects</h1>
-  <h2>Look through my previous experience</h2>
-  <a href="https://doublebb.000webhostapp.com" target="_blank" rel="noopener noreferrer"><img style="filter:invert(100%);" src="images/favicon.png" alt="Logo"></a>
-  <a target="_blank" href="https://doublebb.000webhostapp.com/gagash"><img src="images/microphone-smile.jpg" alt="Logo"></a>
-  <a target="_blank" href="./pyaze.zip"><img src="images/py.png" alt="Logo"></a><br></br><br></br>
-  <a target="_blank" class="project-name" href="https://doublebb.000webhostapp.com">&nbsp; &nbsp; &nbsp; DoubleB &nbsp; </a>
-  <a  target="_blank" class="project-name" href="https://doublebb.000webhostapp.com/gagash">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gagash</a>
-  <a  target="_blank" class="project-name" href="./pyaze.zip">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pyaze</a>
-  <br><br> &nbsp;&nbsp;and other unreleased expremental projects like chat applications games AIs and more. 
-  <br></br><h1>Skills</h1>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Teymur Babayev</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#academics">Academics and Honors</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-&nbsp;&nbsp;<p>HTML</p>
-<div class="container">
-  <div class="skills html">90%</div>
-</div>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Write a brief introduction about yourself and your passion for coding.
+            </p>
+        </div>
+    </section>
 
-&nbsp;&nbsp;<p>CSS</p>
-<div class="container">
-  <div class="skills css">60%</div>
-</div>
+    <section id="academics" class="section">
+        <div class="container">
+            <h2>Academics and Honors</h2>
+            <p>
+                List your academic achievements, honors, and any relevant accomplishments in this section.
+            </p>
+        </div>
+    </section>
 
-&nbsp;&nbsp;<p>JavaScript</p>
-<div class="container">
-  <div class="skills js">85%</div>
-</div>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- List your projects here -->
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
 
-&nbsp;&nbsp;<p>PHP</p>
-<div class="container">
-  <div class="skills php">80%</div>
-</div>
-&nbsp;&nbsp;<p>SQL</p>
-<div class="container">
-  <div class="skills sql">70%</div>
-</div>
-&nbsp;&nbsp;<p>Python</p>
-<div class="container">
-  <div class="skills python">90%</div>
-</div>
-&nbsp;&nbsp;<p>C</p>
-<div class="container">
-  <div class="skills c">60%</div>
-</div>&nbsp;&nbsp;
-&nbsp;&nbsp;
-<p>C++</p>
-<div class="container">
-  <div class="skills cpp" style="width: 65%;  background-image: linear-gradient(to right,white, black);">65%</div>
-</div><br><br>
-<p>Assembly</p>
-<div class="container ">
-  <div class="skills assembly" style="width: 30%;  background-image: linear-gradient(to right,red, #8F8F00);">40%</div>
-</div><br><br>&nbsp;&nbsp;
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at your.email@example.com</p>
+        </div>
+    </section>
 
-</div>
-<div id="contact"><br><br>
-<div class="contact">
-<h2>&nbsp;&nbsp;<br>&nbsp;  Contact me</h2>
-&nbsp;&nbsp;<div class="fa fa-at">&nbsp; </div><a href="mailto:teymur_babayev08@yahoo.com">Email</a><br><br>
-&nbsp;&nbsp;<div class="fa fa-instagram">&nbsp;</div><a href="https://instagram.com/teyymuurr">Instagram</a><br><br>
-&nbsp;&nbsp;<div class="fa fa-twitter">&nbsp;</div><a href="https://twitter.com/Teyymuur">Twitter</a><br><br>
-&nbsp;&nbsp;<div class="fa fa-reddit">&nbsp;</div><a href="https://reddit.com/u/teymuur">Reddit</a><br><br>
-
-</div>
-  <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Teymur Babayev</p>
+        </div>
+    </footer>
 </body>
 </html>
