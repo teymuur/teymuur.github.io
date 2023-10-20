@@ -1,165 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teymur Babayev</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Coming Soon</title>
     <style>
-        /* Custom styles for full-screen sections */
-        .section {
-            height: 100vh;
-            color: #fff; /* White text color */
-            padding: 100px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        /* Custom style for sticky navigation */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background-color: #222; /* Dark navbar background color */
+        h1 {
+            font-size: 2em;
         }
-
-        /* Define different background colors for each section */
-        #home { background-color: #333; } /* Dark gray background */
-        #projects { background-color: #007BFF; } /* Blue background */
-        #academics { background-color: #FFC107; } /* Yellow background */
-        #honors { background-color: #28A745; } /* Green background */
-        #aboutme { background-color: #DC3545; } /* Red background */
-
-        /* Custom styles for the "About Me" section */
-#aboutme {
-    background-color: #DC3545; /* Red background */
-    color: #fff; /* White text color */
-    padding: 100px;
-}
-
-#aboutme h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#aboutme p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-/* Styles for the social media box */
-.social-media-box {
-    background-color: #222; /* Dark box background color */
-    color: #fff; /* White text color */
-    padding: 20px;
-    border: 1px solid #fff; /* White border */
-}
-
-.social-media-box h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.social-media-links {
-    list-style: none;
-    padding: 0;
-}
-
-.social-media-links li {
-    margin-bottom: 10px;
-}
-
-.social-media-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-media-links a:hover {
-    color: #007BFF; /* Blue color on hover */
-}
-
+        .countdown {
+            font-size: 1.5em;
+        }
+        .rotate {
+            animation: rotation 2s infinite linear;
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">TYMR </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#academics">Academics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#honors">Honors</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutme">About Me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<body>
+    <h1>Coming Soon</h1>
+    <div class="countdown rotate" id="countdown"></div>
+    <script>
+        // Set the date we're counting down to (replace with your target date)
+        var countDownDate = new Date("Oct 31, 2023 00:00:00").getTime();
 
-    <!-- Full-screen Sections -->
-    <div id="home" class="section">
-        <h1>Home</h1>
-        <p>Welcome to my portfolio website. I am a web developer with a passion for creating amazing websites and applications.</p>
-    </div>
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
 
-    <div id="projects" class="section">
-        <h1>Projects</h1>
-        <p>Here are some of the projects I've worked on:</p>
-        <ul>
-            <li>Project 1: Description of Project 1</li>
-            <li>Project 2: Description of Project 2</li>
-            <li>Project 3: Description of Project 3</li>
-        </ul>
-    </div>
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    <div id="academics" class="section">
-        <h1>Academics</h1>
-        <p>...</p>
-    </div>
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-    <div id="honors" class="section">
-        <h1>Honors</h1>
-        <p>I have received several honors and awards in recognition of my work in web development.</p>
-    </div>
-
-    <div id="aboutme" class="section">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6">
-                  <h1>About Me</h1>
-                  <p>I am a passionate and dedicated web developer with a strong commitment to delivering high-quality work. I have a wealth of experience in web development, including front-end and back-end technologies. My goal is to create user-friendly and visually appealing websites that meet the needs of my clients.</p>
-              </div>
-              <div class="col-md-6">
-                  <div class="social-media-box">
-                      <h2>Connect with Me</h2>
-                      <ul class="social-media-links">
-                          <li><i class='fa fa-instagram' style='font-size:24px;color:white'></i><a href="https://instagram.com/teyymuurr">  Instagram</a></li>
-                          <li><i class='fa fa-linkedin' style='font-size:24px;color:white'></i><a href="https://linkedin.com">   LinkedIn</a></li>
-                          <li><i class='fa fa-github' style='font-size:24px;color:white'></i><a href="https://github.com/teymuur">  GitHub</a></li>
-                          <li><i class='fa fa-envelope' style='font-size:24px;color:white'></i><a href="mailto:teymur_babayev08@yahoo.com">  Email me!</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
