@@ -1,5 +1,5 @@
 # teymuur.github.io
 
-##Coming soon
+**Coming soon**
 
-##A lot will be done!!
+** A lot will be done!!**
