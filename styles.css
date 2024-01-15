@@ -125,7 +125,8 @@ footer {
         }
 
         /* Define different background colors for each section */
-        #home { background-color: #333; } /* Dark gray background */
+        #home { background: url("https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");   background-size: cover;
+            background-repeat: no-repeat;} /* Dark gray background */
         #projects { background-color: #007BFF; } /* Blue background */
         #academics { background-color: #FFC107; } /* Yellow background */
         #Values { background-color: #28A745;  } /* Green background */
@@ -230,3 +231,28 @@ footer {
         padding: 2px 16px;
       }
   }
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    p{
+        font:10px;
+    }
+    #projects{
+        display: none;
+
+    }
+    #Values{
+        display: none;
+        height:200vh;
+        container p{
+            
+            
+            padding: 0px;
+            border: 2px;
+            font-size: 60%;
+        }
+    }
+    #aboutme{
+
+    }
+}
