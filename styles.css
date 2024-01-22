@@ -5,8 +5,8 @@ body{
 
 .text{
     font-family: 'Courier New', monospace;
-    padding-top: 200px;
-    padding-left: 250px;
+    padding-top: 20%;
+    padding-left: 10%;
     font-size: 36px;
 }
 .hero {
