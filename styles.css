@@ -1,255 +1,35 @@
-/* Reset some default styles */
-body, h1, h2, h3, p {
+body{
     margin: 0;
-    padding: 0;
+    color: aliceblue;
 }
 
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
+.text{
+    font-family: 'Courier New', monospace;
+    padding-top: 200px;
+    padding-left: 250px;
+    font-size: 36px;
 }
-
-/* Header styles */
-.header {
-    background: #000;
-    color: #fff;
-    padding: 20px;
-}
-
-.header a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-/* Hero section styles */
 .hero {
-    background: url('hero-bg.jpg') center/cover no-repeat;
-    text-align: center;
-    color: #fff;
-    padding: 100px 0;
-}
-
-.hero-title {
-    font-size: 2.5em;
-    margin: 10px 0;
-}
-
-.hero-description {
-    font-size: 1.5em;
-    margin: 20px 0;
-}
-
-/* Navigation styles */
-.navbar {
-    background: transparent;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
-
-.navbar ul {
-    list-style: none;
-    text-align: center;
-}
-
-.navbar li {
-    display: inline;
-    margin: 0 20px;
-}
-
-/* Section styles */
-.section {
-    padding: 60px 0;
-}
-
-.section-title {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Project styles */
-.project {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Animations */
-.flash-name {
-    animation: flash 1s infinite;
-}
-
-@keyframes flash {
-    0%, 100% {
-        color: #333;
-    }
-    50% {
-        color: #ff5733;
-    }
-}        /* Custom styles for full-screen sections */
-        .section {
-            height: 100vh;
-            color: #fff; /* White text color */
-            padding: 100px;
-            text-align: center;
-        }
-
-        /* Custom style for sticky navigation */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background-color: #222; /* Dark navbar background color */
-        }
-
-        /* Define different background colors for each section */
-        #home { background: url("https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");   background-size: cover;
-            background-repeat: no-repeat;} /* Dark gray background */
-        #projects { background-color: #007BFF; } /* Blue background */
-        #academics { background-color: #FFC107; } /* Yellow background */
-        #Values { background-color: #28A745;  } /* Green background */
-        #aboutme { background-color: #DC3545; } /* Red background */
-
-        /* Custom styles for the "About Me" section */
-#aboutme {
-    background-color: #DC3545; /* Red background */
-    color: #fff; /* White text color */
-    padding: 100px;
-}
-
-#aboutme h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#aboutme p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-/* Styles for the social media box */
-.social-media-box {
-    background-color: #222; /* Dark box background color */
-    color: #fff; /* White text color */
-    padding: 20px;
-    border: 1px solid #fff; /* White border */
-}
-
-.social-media-box h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.social-media-links {
-    list-style: none;
-    padding: 0;
-}
-
-.social-media-links li {
-    margin-bottom: 10px;
-}
-
-.social-media-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-media-links a:hover {
-    color: #007BFF; /* Blue color on hover */
-}
-#Values .container p{
-    width: 50%;
-    float: left;
-    padding: 20px;
-    border: 2px;
-    font-size: 100%;
-}
-
-#Values .container{
-    border: 3px ;
-    padding: 20px;
-}
-#Values h1{      
-
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    
+    height: 100vh;
+    background: linear-gradient(
+      158deg,
+      rgba(15, 37, 110, 1) 21%,
+      rgba(130, 196, 118, 1) 87%
+    );
+    background-blend-mode: normal;
+    transform: translate(0px, 0px);
+    animation-name: home;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
-  strong {
-    font-weight: bold;
-  }
-  #projects{
-  
-    padding: 2rem 2rem;
-    text-align: center;
+  @keyframes home {
 
-     .card-container {
-      display: flex;
-      overflow-x: auto;
-      padding: 20px;
-    }
-
-    .card {
-      flex: 0 0 auto;
-      width: 300px; /* Set the width of your cards */
-      margin-right: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      overflow: hidden;
-      background-color: #333;
-    }
-
-    .card img {
-      width: 100%;
-      height: 150px; /* Set the height of your card images */
-      object-fit: cover;
+    to{
+         background: linear-gradient(
+            23deg,
+            rgba(15, 37, 110, 1) 21%,
+            rgb(219, 34, 43) 87%
+          );
     }
   }
-
-/* Mobile Styles */
-@media only screen and (max-width: 767px) {
-    p{
-        font:10px;
-    }
-    #projects{
-       
-
-    }
-    #Values{
-        
-        height:200vh;
-        container p{
-            
-            
-            padding: 0px;
-            border: 2px;
-            font-size: 60%;
-        }
-    }
-    #aboutme{
-
-    }
-}
