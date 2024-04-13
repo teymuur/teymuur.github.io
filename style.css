@@ -141,3 +141,42 @@ body {
     background: #3498db;
     border-radius: 5px;
   }
+
+  /* Mobile-friendly styles */
+@media (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .blue-bg,
+    .blue-gradient,
+    .light-blue-bg,
+    .dark-blue-bg,
+    header,
+    nav,
+    main section,
+    .experience-item {
+      width: 80%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      width: 100%;
+    }
+  
+    nav a {
+      text-align: left;
+    }
+  
+    main section h2 {
+      font-size: 20px;
+    }
+  
+    .experience-item h3,
+    .experience-item h4 {
+      font-size: 18px;
+    }
+  }
