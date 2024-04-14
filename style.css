@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #07074e;
+    background: url("https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     color: #ffffff;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -21,14 +21,14 @@ body {
   }
   
   .blue-gradient {
-    background: linear-gradient(to right, #212169 0%, #8a8ab9 50%, #0b0b92 100%);
+    background: linear-gradient(to right, #212169 0%, #4b4bb9 50%, #0b0b92 100%);
     padding: 60px;
     text-align: center;
     width: 1000px;
   }
   
   .light-blue-bg {
-    background-color: #00bfff;
+    background-color: #525ec2;
     padding: 60px;
     text-align: center;
     width: 1000px;
@@ -125,7 +125,7 @@ body {
     text-align: center;
     padding: 20px;
     background-color: #3498db;
-    color: #ffffff;
+    color: #c3c3d3;
     font-size: 16px;
   }
   
@@ -134,11 +134,11 @@ body {
   }
   
   ::-webkit-scrollbar-track {
-    background: #0000ff;
+    background: #04042c;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #3498db;
+    background: #51abe7;
     border-radius: 5px;
   }
 
