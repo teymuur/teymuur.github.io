@@ -84,4 +84,4 @@ codevisible = false
     }
 
     // Fetch and display random images from the 'EarthPorn' subreddit
-    fetchRandomImages('memes', 9);
+    fetchRandomImages('memes', 8);
