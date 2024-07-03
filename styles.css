@@ -83,3 +83,19 @@ code{
 #code .copy-button:hover {
     background-color: #615b5b;
 }
+footer {
+    float: left;
+    width: 100%;
+    color: #fff;
+    line-height: 180%;
+    padding: 1em 0 1em 0;
+    margin: 0;
+ 
+    background: #333;
+    text-align: center;
+a{
+    color:#fff;
+    font-size: 24px;
+    padding: 5px;;
+}
+}
