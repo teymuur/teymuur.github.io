@@ -10,7 +10,6 @@
 <body>
     <header>
         Teymur Babayev - Developer
-        
     </header>
     <div class="container">
         <h1>Projects</h1>
@@ -24,12 +23,12 @@
         <div class="project">
             <h3>VisionEase Wear</h3>
             <div class="links">
-                <a  href="https://github.com/teymuur/VisionEase-wear" target="_blank">See Code</a>
+                <a href="https://github.com/teymuur/VisionEase-wear" target="_blank">See Code</a>
                 <a href="https://github.com/teymuur/visionease-wear/blob/master/README.md" target="_blank">Learn more</a>
             </div>
         </div>
         <div class="project">
-            <h3>Voice Recorder </h3>
+            <h3>Voice Recorder</h3>
             <div class="links">
                 <a href="https://github.com/teymuur/voice-recorder" target="_blank">See Code</a>
                 <a href="https://teymuur.github.io/voice-recorder" target="_blank">Live Demo</a>
@@ -49,25 +48,23 @@
                 <a href="https://teymuur.github.io/resume-builder" target="_blank">Live Demo</a>
             </div>
         </div>
-            <div class="project">
+        <div class="project">
             <h3>PyAze⠀⠀⠀⠀⠀⠀</h3>
             <div class="links">
                 <a href="https://pypi.org/project/pyaze" target="_blank">Project Details</a>
-                <a id="install" target="_blank">Install</a>    
+                <a id="install" target="_blank">Install</a>
             </div>
-            </div>
-
-            <div style="display: none"class="project" id="code">
-                
-                    <code>
-                    pip install pyaze   <button class="copy-button"><i class="fa fa-clipboard"></i></button>
-                </code>
-            </div>
+        </div>
+        <div style="display: none" class="project" id="code">
+            <code>
+                pip install pyaze <button class="copy-button"><i class="fa fa-clipboard"></i></button>
+            </code>
+        </div>
         <div class="project">
-            <h3>Currecy Excange</h3>
+            <h3>Currency Exchange</h3>
             <div class="links">
-                <a href="https://github.com/teymuur/currecy-exchange" target="_blank">See Code</a>
-                <a href="https://teymuur.github.io/currecy-exchange" target="_blank">Live Demo</a>
+                <a href="https://github.com/teymuur/currency-exchange" target="_blank">See Code</a>
+                <a href="https://teymuur.github.io/currency-exchange" target="_blank">Live Demo</a>
             </div>
         </div>
         <div class="project">
@@ -78,28 +75,33 @@
             </div>
         </div>
         <div class="project">
-            <h3>Image editor</h3>
+            <h3>Image Editor</h3>
             <div class="links">
                 <a href="https://github.com/teymuur/image-editor" target="_blank">See Code</a>
                 <a href="https://github.com/teymuur/image-editor/archive/refs/heads/master.zip" target="_blank">Download</a>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="memes">
         <h1>Memes</h1>
-        <div id="images" >
-
-        </div>
+        <select id="subredditSelect">
+            <option value="memes">r/memes</option>
+            <option value="ProgrammingHumour">r/ProgrammingHumour</option>
+            <option value="PhilosophyMemes">r/PhilosophyMemes</option>
+            <option value="gymhumour">r/gymhumour</option>
+            <option value="LinuxMemes">r/LinuxMemes</option>
+        </select>
+        <input type="number" id="numMemes" placeholder="Number of memes" min="1" max="20">
+        <button onclick="fetchRandomImages(document.getElementById('subredditSelect').value, document.getElementById('numMemes').value)">Fetch Memes</button>
+        <div id="images"></div>
     </div>
-<footer>
-    <p>© 2024 Teymur Babayev. All rights reserved.</p>
-    <a href="https://github.com/teymuur" target="_blank"><i class="fa fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/teymuurbabayev/" target="_blank"><i class="fa fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/teyymuurr/" targeyt="_blank"><i class="fa fa-instagram"></i></a>
-    <a href="mailto:teymur_babayev08@yahoo.com" target="_blank"><i class="fa fa-envelope"></i></a>
-  
-</footer>
-
+    <footer>
+        <p>© 2024 Teymur Babayev. All rights reserved.</p>
+        <a href="https://github.com/teymuur" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/teymuurbabayev/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/teyymuurr/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="mailto:teymur_babayev08@yahoo.com" target="_blank"><i class="fa fa-envelope"></i></a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
