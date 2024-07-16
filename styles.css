@@ -1,22 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('bg-image.jpg');
+    height: 100%;
     background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
-header {
+nav {
     background-color: #333;
     color: white;
-    padding: 1rem 0;
+    padding: 10px 0;
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    position: sticky;
+    top:0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
+
+nav a {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    gap: 20px; 
+    color: #fff;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+#home {
+    background: url('images/image1.png') center center/cover no-repeat;
+    color: white;
+    height: 100vh;
+
+}
+#projects{
+    background: url('images/image2.png') center center/cover no-repeat;
+
+}
+#projects,#home,#skills, #memes{
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .container {
     width: 80%;
     max-width: 900px;
@@ -150,6 +193,10 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+
+
+
 button:hover {
     background-color: #0056b3;
 }
@@ -168,3 +215,24 @@ button:hover {
     background: #555;
 }
 
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        font-size: 1.2rem;
+    }
+    .container {
+        width: 90%;
+        margin: 1rem 0;
+        padding: 0.5rem;
+    }
+    .project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+ 
+}
