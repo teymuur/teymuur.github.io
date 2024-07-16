@@ -43,11 +43,18 @@ nav a:hover {
     background: url('images/image1.png') center center/cover no-repeat;
     color: white;
     height: 100vh;
+    
 
 }
 #projects{
     background: url('images/image2.png') center center/cover no-repeat;
+}
 
+#skills{
+    background: url('images/image3.png') center center/cover no-repeat;
+}
+#memes{
+    background: url('images/image4.png') center center/cover no-repeat;
 }
 #projects,#home,#skills, #memes{
   
