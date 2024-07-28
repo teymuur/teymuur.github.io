@@ -147,3 +147,38 @@ codevisible = false
         const skillsChart = new Chart(ctx, config);
     });
     
+
+//TypeScript
+const roles = ['Web Developer', 'Student', 'Graphic Designer', 'Programmer','Entrepreneur'];
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingSpeed = 100;
+const deletingSpeed = 50;
+const pauseBetweenRoles = 1000;
+
+function typeWriter() {
+    const currentRole = roles[roleIndex];
+    const typewriterElement = document.getElementById('typewriter');
+
+    if (isDeleting) {
+        typewriterElement.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typewriterElement.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    if (!isDeleting && charIndex === currentRole.length) {
+        isDeleting = true;
+        setTimeout(typeWriter, pauseBetweenRoles);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(typeWriter, typingSpeed);
+    } else {
+        setTimeout(typeWriter, isDeleting ? deletingSpeed : typingSpeed);
+    }
+}
+
+typeWriter();

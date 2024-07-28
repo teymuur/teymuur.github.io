@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    background: url('images/image1.png') center center/cover no-repeat;
+    background: linear-gradient( rgba(111, 119, 177, 0.2), rgba(225, 134, 134, 0.3) ),url('images/image1.png') center center/cover no-repeat;
 }
 nav {
     -webkit-backdrop-filter: blur(8px);
@@ -44,10 +44,13 @@ nav a:hover {
 }
 
 #home {
-    background: url('images/image1.png') center center/cover no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/image1.png') center center/cover no-repeat;
     color: white;
     height: 100vh;
-    
+    font-size: 48px;
+    display: block !important;
+    text-shadow: -1px -1px 1px #523434, 1px -1px 1px #523434, -1px 1px 1px #523434, 1px 1px 1px #523434;
+    text-decoration: none;
 
 }
 #projects{
@@ -245,5 +248,8 @@ button:hover {
         align-items: center;
         text-align: center;
     }
- 
+    #home{
+        font-size: 28px;
+    }
+    
 }
