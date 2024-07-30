@@ -149,7 +149,7 @@ codevisible = false
     
 
 //TypeScript
-const roles = ['Web Developer', 'Student', 'Graphic Designer', 'Programmer','Entrepreneur'];
+const roles = [' Web Developer', ' Student', ' Graphic Designer', ' Programmer','n Entrepreneur'];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
