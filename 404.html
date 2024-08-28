@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not found</title>
+    <style>
+        body{
+            background: url('/images/image3.png');
+            background-size: cover;
+        }
+        nav {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top:0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    gap: 20px; 
+    color: white;
+
+        text-shadow: -1px -1px 1px #523434, 1px -1px 1px #523434, -1px 1px 1px #523434, 1px 1px 1px #523434;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #523434;
+}
+main{
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+           
+            flex-direction: column;
+        }
+span {
+    color: whitesmoke;
+    text-shadow: -2px -2px 2px #000000, 2px -2px 2px #523434, -2px 2px 2px #523434, 2px 2px 2px #523434; 
+            font-size: 72px;
+}
+main a{
+    color:rgb(112, 199, 221);
+    font-size: 38px;
+    text-decoration: none;
+    text-shadow: -0.5px -0.5px 0.5px #523434, 0.5px -0.5px 0.5px #523434, -0.5px 0.5px 0.5px #523434, 0.5px 0.5px 0.5px #523434;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">TYMBB </a>
+        <a href="/#home">Home </a>
+        <a href="/#projects">Projects </a>
+        <a href="/#skills">Skills </a>
+        <a href="/#memes">Memes </a>
+    </nav>
+    <main>
+        <span>404 <br>Page Not Found</span> <br>
+        <div><a href="/">Try Home>></a></div>   
+    </main>
+</body>
+</html>
