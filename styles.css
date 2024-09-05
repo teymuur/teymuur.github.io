@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    background: linear-gradient( rgba(111, 119, 177, 0.2), rgba(225, 134, 134, 0.3) ),url('images/image1.png') center center/cover no-repeat;
+    background:#412518a6;
 }
 nav {
     -webkit-backdrop-filter: blur(8px);
@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 #home {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/image1.png') center center/cover no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/image1.webp') center center/cover no-repeat;
     color: white;
     height: 100vh;
     font-size: 42px;
@@ -54,11 +54,11 @@ nav a:hover {
 
 }
 #projects{
-    background: url('images/image2.png') center center/cover no-repeat;
+    background: url('images/image2.webp') center center/cover no-repeat;
 }
 
 #skills{
-    background: url('images/image3.jpg') center center/cover no-repeat;
+    background: url('images/image3.webp') center center/cover no-repeat;
 }
 #memes{
     background: url('images/image4.png') center center/cover no-repeat;
