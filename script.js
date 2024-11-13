@@ -13,7 +13,12 @@ codevisible = false
     }
 
     });
-
+    function truncateString(str, maxLength = 40) {
+        if (str.length <= maxLength) {
+            return str;
+        }
+        return str.slice(0, maxLength - 3) + '...';
+    }
     function copytoclipboard() {
         // Get the text field
         var copyText = document.getElementById("code");
@@ -68,13 +73,13 @@ codevisible = false
 
             const img = document.createElement('img');
             img.src = image.url;
-            img.alt = image.title;
+            img.alt = truncateString(image.title); 
             img.width = 600;
             img.height = 400;
 
             const desc = document.createElement('div');
             desc.className = 'desc';
-            desc.textContent = image.title;
+            desc.textContent = truncateString(image.title);
 
             link.appendChild(img);
             galleryDiv.appendChild(link);
@@ -84,7 +89,7 @@ codevisible = false
     }
 
     // Fetch and display random images from the 'EarthPorn' subreddit
-    fetchRandomImages('memes', 8);
+    fetchRandomImages('programmerhumor', 8);
 
     document.addEventListener("DOMContentLoaded", function() {
         const ctx = document.getElementById('skillsChart').getContext('2d');
