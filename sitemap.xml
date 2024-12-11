@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tymbb.com/index.html</loc>
+    <image:image>
+      <image:loc>https://tymbb.com/images/teymurbabayev.jpeg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://tymbb.com/resume-builder</loc>
