@@ -94,10 +94,10 @@ codevisible = false
     document.addEventListener("DOMContentLoaded", function() {
         const ctx = document.getElementById('skillsChart').getContext('2d');
         const skillsData = {
-            labels: ['Python', 'PHP', 'JavaScript', "Rust",'C#', 'C/C++', 'HTML', 'CSS', 'SQL', 'Linux','Git'],
+            labels: ['Python', 'PHP', 'JavaScript', "Rust",'C#', 'C/C++', 'HTML', 'CSS', 'SQL', 'Linux','Git','Java'],
             datasets: [{
                 label: 'Skill Level',
-                data: [5, 4, 4.5,3.5, 3, 2, 4.5, 3, 4, 4,3],
+                data: [5, 4, 4.5,3.5, 3, 2, 4.5, 3, 4, 4,3,3],
                 backgroundColor: [
                     'rgba(75, 192, 192, 0.4)',
                     'rgba(75, 192, 100, 0.4)',

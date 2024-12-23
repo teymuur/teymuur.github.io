@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of developer, Programmer, and Graphic Designer Teymur Babayev - TYMBB">
+    <meta name="keywords" content="Babayev,Portfolio,Developer,Programmer,Teymur">
+    <title>Teymur Babayev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+                background: url("images/image4.png") center/cover;
+        }
+        .aaa{
+            width: 80%;
+    max-width: 900px;
+    margin: 2rem 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+        }
+        #skills {
+          font-family: system-ui, sans-serif;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          padding: 20px;
+           background: url('images/image3.webp') center center/cover no-repeat;
+           border-radius: 8px;
+        }
+        
+        .skill-box {
+          background: white;
+          border-radius: 12px;
+          padding: 20px;
+          width: 150px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+        
+        .skill-name {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .skill-level {
+          padding: 5px 10px;
+          border-radius: 15px;
+          font-size: 14px;
+          color: white;
+          background: #4CAF50;
+        }
+        
+        .advanced { background: #4CAF50; }
+        .intermediate { background: #2196F3; }
+        .basic { background: #FFC107; }
+        </style>
+</head>
+<body>
+    <nav>
+        <a href="/">TYMBB </a>
+        <a href="#projects">Projects </a>
+        <a href="#skills">Skills </a>
+    </nav>
+  
+    <!-- <div id="home">
+       
+        <h1>Hi, I'm Teymur. <br>I am a<span id="typewriter"></span></h1>
+     
+
+    </div> -->
+    <div id="projects">
+    <div  class="container">
+        <h1>Projects</h1>
+       
+        <div class="project">
+            <h3>Recipe Finder</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/recipe-finder" target="_blank">See Code</a>
+                <a href="/recipe-finder" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Programming Language Generator</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/programming-language-builder" target="_blank">See Code</a>
+                <a href="/programming-language-builder" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Frequency Player</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/frequency-player" target="_blank">See Code</a>
+                <a href="/frequency-player" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Assistive Glasses for Visually Impaired</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/VisionEase-wear" target="_blank">See Code</a>
+                <a href="https://github.com/teymuur/visionease-wear/blob/master/README.md" target="_blank">Learn more</a>
+            </div>
+        </div>
+        
+        <div class="project">
+            <h3>Python in Azerbaijani</h3>
+            <div class="links">
+                <a href="https://pypi.org/project/pyaze" target="_blank">Project Details</a>
+                <a id="install" target="_blank">Install</a>
+            </div>
+        </div>
+        <div style="display: none" class="project" id="code">
+            <code>
+                pip install pyaze <button class="copy-button"><i class="fa fa-clipboard"></i></button>
+            </code>
+        </div>
+        <div class="project">
+            <h3>Financial Tracker</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/financial-tracker" target="_blank">See Code</a>
+                <a href="/financial-tracker" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Resume Builder</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/resume-builder" target="_blank">See Code</a>
+                <a href="/resume-builder" target="_blank">Live Demo</a>
+            </div>
+        </div>        
+        <div class="project">
+            <h3>Voice Recorder</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/voice-recorder" target="_blank">See Code</a>
+                <a href="/voice-recorder" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Shell in Rust</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/shell-rust" target="_blank">See Code</a>
+                <a href="https://github.com/teymuur/shell-rust/archive/refs/heads/master.zip" target="_blank">Download</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>AdBlocker</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/adblocker" target="_blank">See Code</a>
+                <a href="https://github.com/teymuur/adblocker/archive/refs/heads/master.zip" target="_blank">Download</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>File Converter</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/file-converter" target="_blank">See Code</a>
+                <a href="/file-converter" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Outdated Lessons</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/outdated-lessons" target="_blank">See Code</a>
+                <a href="/outdated-lessons" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Currency Exchange</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/currency-exchange" target="_blank">See Code</a>
+                <a href="/currency-exchange" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>PI Digits Game</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/pi-digits-game" target="_blank">See Code</a>
+                <a href="/pi-digits-game" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>PHP Live Chat</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/allapp" target="_blank">See Code</a>
+                <a href="/allapp" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Image Editor</h3>
+            <div class="links">
+                <a href="https://github.com/teymuur/image-editor" target="_blank">See Code</a>
+                <a href="https://github.com/teymuur/image-editor/archive/refs/heads/master.zip" target="_blank">Download</a>
+            </div>
+        </div>
+        
+
+    </div></div></div>
+    <div class="aaa">
+   <h1>Skills</h1>
+    <div id="skills">
+        <div class="skill-box">
+    <div class="skill-name">Python</div>
+    <div class="skill-level advanced">Advanced</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">PHP</div>
+    <div class="skill-level intermediate">Intermediate</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">JavaScript</div>
+    <div class="skill-level advanced">Advanced</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">Rust</div>
+    <div class="skill-level intermediate">Intermediate</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">C#</div>
+    <div class="skill-level intermediate">Intermediate</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">C/C++</div>
+    <div class="skill-level basic">Basic</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">HTML</div>
+    <div class="skill-level advanced">Advanced</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">CSS</div>
+    <div class="skill-level intermediate">Intermediate</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">SQL</div>
+    <div class="skill-level advanced">Advanced</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">Linux</div>
+    <div class="skill-level advanced">Advanced</div>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-name">Git</div>
+    <div class="skill-level intermediate">Intermediate</div>
+  </div> 
+  <div class="skill-box">
+    <div class="skill-name">Java</div>
+    <div class="skill-level intermediate">Intermediate</div>
+  </div>
+</div></div>
+  
+    <footer>
+        <p>© 2024 Teymur Babayev. All rights reserved.</p>
+        <a href="https://github.com/teymuur" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/teymur--babayev/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/teyymuurr/" target="_blank"><i class="fa fa-instagram"></i></a>
+         
+        <a href="mailto:me@tymbb.com" target="_blank"><i class="fa fa-envelope"></i></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
