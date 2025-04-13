@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     height: 100%;
     background-size: cover;
     margin: 0;
@@ -25,6 +25,59 @@ nav {
     justify-content: center;
 }
 
+        #skills {
+
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(-100px) translateZ(-200px) rotateX(45deg);
+            transition: transform 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67), 
+                        opacity 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            position: relative;
+        }
+
+        .skill-icon img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            
+        }
+
+        .skill-icon.visible {
+            opacity: 1;
+            transform: translateY(0) translateZ(0) rotateX(0);
+        }
+
+        .skill-name {
+            position: absolute;
+            top: 85px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
 nav a {
     list-style-type: none;
     margin: 0;
@@ -35,18 +88,25 @@ nav a {
 
     text-shadow: -1px -1px 1px #523434, 1px -1px 1px #523434, -1px 1px 1px #523434, 1px 1px 1px #523434;
     text-decoration: none;
-
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #523434;
 }
+#my-name{
 
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+      
+}
 #home {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/image1.webp') center center/cover no-repeat;
     color: white;
     height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 42px;
     display: block !important;
     text-shadow: -1px -1px 1px #523434, 1px -1px 1px #523434, -1px 1px 1px #523434, 1px 1px 1px #523434;
@@ -76,9 +136,13 @@ nav a:hover {
 
 .container {
     width: 80%;
-    max-width: 900px;
+    max-width: 140vh;
     margin: 2rem 0;
-    background-color: white;
+    color:white;
+    border-color: #3b3737;
+    border-width: 10px;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 8px;
@@ -114,39 +178,18 @@ nav a:hover {
 }
 h1 {
     text-align: center;
+    color:white
 }
-code {
-    color: #d1e7ff;
-    position: relative;
-    font-size: large;
-    background-color: #333;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-#code .copy-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    background-color: #3b3737;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: #ffffff;
-}
-#code .copy-button:hover {
-    background-color: #615b5b;
-}
+
 /* gallery */
 div.gallery {
     height: 360px;
     margin: 5px;
-    margin-left: 7%;
+    margin-left: 2%;
     margin-right: 0;
     border: 1px solid #ccc;
     float: left;
-    width: 350px;
+    width: 400px;
     border-radius: 8px;
 }
 div.gallery:hover {

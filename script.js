@@ -1,18 +1,4 @@
 
-installbtn =  document.getElementById("install")
-codevisible = false
-   installbtn.addEventListener('click', function(event) {
-    if(!codevisible){
-        event.preventDefault();
-        
-        document.getElementById("code").style = "display: default";
-        codevisible = true;
-    }else{
-        document.getElementById("code").style = "display: none";
-        codevisible = false;
-    }
-
-    });
     function truncateString(str, maxLength = 40) {
         if (str.length <= maxLength) {
             return str;
@@ -89,68 +75,8 @@ codevisible = false
     }
 
     // Fetch and display random images from the 'EarthPorn' subreddit
-    fetchRandomImages('programmerhumor', 8);
+    fetchRandomImages('programmerhumor', 9);
 
-    document.addEventListener("DOMContentLoaded", function() {
-        const ctx = document.getElementById('skillsChart').getContext('2d');
-        const skillsData = {
-            labels: ['Python', 'PHP', 'JavaScript', "Rust",'C#', 'C/C++', 'HTML', 'CSS', 'SQL', 'Linux','Git','Java'],
-            datasets: [{
-                label: 'Skill Level',
-                data: [5, 4, 4.5,3.5, 3, 2, 4.5, 3, 4, 4,3,3],
-                backgroundColor: [
-                    'rgba(75, 192, 192, 0.4)',
-                    'rgba(75, 192, 100, 0.4)',
-                    'rgba(175, 16, 192, 0.4)',
-                    'rgba(153, 102, 255, 0.4)',
-                    'rgba(255, 159, 64, 0.4)',
-                    'rgba(275, 255, 2, 0.4)',
-                    'rgba(255, 25, 25, 0.4)',
-                    'rgba(75, 252, 75, 0.4)',
-                    'rgba(180, 192, 190, 0.4)',
-                    'rgba(15, 16, 190, 0.4)',
-                    'rgba(193, 192, 5, 0.4)',
-    
-                    
-                ],
-                borderColor: [
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(75, 192, 100, 1)',
-                    'rgba(175, 16, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(275, 255, 2, 1)',
-                    'rgba(255, 25, 25, 1)',
-
-                ],
-                borderWidth: 1
-            }]
-        };
-    
-       
-        const config = {
-            type: 'bar',
-            data: skillsData,
-            options: {
-                plugins: {
-                    legend: {
-                        display: false  // Hide the legend
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 5,
-                        display: false  // Hide y-axis numbers
-                    }
-                },
-                
-            }
-        };
-
-    
-        const skillsChart = new Chart(ctx, config);
-    });
     
 
 //TypeScript
@@ -187,3 +113,41 @@ function typeWriter() {
 }
 
 typeWriter();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const skillsSection = document.getElementById('skills');
+    const skillIcons = document.querySelectorAll('.skill-icon');
+    
+    // Set up Intersection Observer for the skills section
+    const skillsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When skills section comes into view, animate icons in
+                skillIcons.forEach(icon => {
+                    icon.classList.add('visible');
+                });
+            } else {
+                // When skills section goes out of view, animate icons out
+                skillIcons.forEach(icon => {
+                    icon.classList.remove('visible');
+                });
+            }
+        });
+    }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
+    
+    skillsObserver.observe(skillsSection);
+    
+    // Smooth scrolling for navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
