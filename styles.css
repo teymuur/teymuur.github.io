@@ -8,7 +8,6 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    background: url("images/image4.png") center/cover;
 }
 nav {
     -webkit-backdrop-filter: blur(8px);
@@ -17,7 +16,8 @@ nav {
     padding: 10px 0;
     width: 100%;
     text-align: center;
-    position: sticky;
+    position: fixed;
+    z-index: 9999;
     top:0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin: 0;

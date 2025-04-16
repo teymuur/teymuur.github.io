@@ -6,9 +6,7 @@
       <image:loc>https://tymbb.com/images/teymurbabayev.jpeg</image:loc>
     </image:image>
   </url>
-  <url>
-    <loc>https://tymbb.com/resume-builder</loc>
-  </url>
+
   <url>
     <loc>https://tymbb.com/recipe-finder</loc>
   </url>
@@ -24,6 +22,8 @@
   <url>
     <loc>https://tymbb.com/currency-exchange</loc>
   </url>
+  <url>
+    <loc>https://tymbb.com/pi-digits-game</loc>
   <url>
     <loc>https://tymbb.com/philosophy-bible</loc>
   </url>

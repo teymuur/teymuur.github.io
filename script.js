@@ -133,12 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
-    }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
+    }, { threshold: 0.2 }); 
     
     skillsObserver.observe(skillsSection);
     
     // Smooth scrolling for navigation
-    document.querySelectorAll('nav a').forEach(anchor => {
+    document.querySelectorAll('nav a.scroll').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
