@@ -380,9 +380,7 @@ button:hover {
         margin-left: 0;
         border-radius: 8px;
     }
-    .project:hover .tooltip-content{
-      
-    }
+  
 }
 
 /*Accesibility*/
@@ -407,14 +405,14 @@ button:hover {
     left: 20%;
     border-radius: 30px;
     background-color: #af996a;
-    z-index: 9999;
+    z-index: 99999;
     padding: 1em;
     max-width: 30rem;
     transform: 0;
-    transition: 1s ease;
+
     
   }
   .project:hover .tooltip-content {
     display: block;
-        transform: rotate(5deg);
+    transform: rotate(5deg);
   }
