@@ -16,3 +16,5 @@ User-Agent: OAI-SearchBot
 Disallow: / 
 User-agent: Google-Extended
 Disallow: /
+
+Sitemap: https://tymbb.com/sitemap.xml
